@@ -15,7 +15,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from economiza import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', views.mostrar_home),
 ]
