@@ -5,15 +5,23 @@
     margin: 0;
 }
 
-#itens-nav{
-    display: flex;
+#img-nav{
     align-items: center;
+    display: flex;
+    margin: 0 0 0 15px;
+}
+
+#itens-nav{
+    align-items: center;
+    display: flex;
     justify-content: center;
+    padding: 25px;
 }
 
 #itens-nav a{
     color: white;
     font-family: 'Bebas Neue', cursive;
+    font-size: larger;
     text-decoration: none;
     padding: 0 15px;
 }
