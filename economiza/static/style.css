@@ -130,6 +130,14 @@ nav{
 
 
 /* Home */
+
+.content-home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 8%;
+}
+
 #section1-home{
     align-items: center;
     background-color: #341773;
@@ -142,13 +150,7 @@ nav{
 }
 
 #section1-home h1{
-    font-size: 300%;
-    margin: 0 0 25% 0;
+    font-size: 240%;
+    margin: 0 0 20% 0;
 }
 
-.content-home{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 0 10%;
-}
