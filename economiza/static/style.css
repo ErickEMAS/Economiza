@@ -2,6 +2,20 @@
     margin: 0;
 }
 
+#itens-nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#itens-nav a{
+    color: white;
+    text-decoration: none;
+    padding: 0 15px;
+}
+
 nav{
     background-color: rgb(123, 31, 228);
+    display: flex;
+    justify-content: space-between;
 }
