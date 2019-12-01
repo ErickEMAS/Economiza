@@ -7,22 +7,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
+    <link rel="shortcut icon" href="{% static 'img/favicon.png' %}" type="image/x-icon">
+
     <link rel="stylesheet" href="{% static 'style.css' %}">
 
     <title>Economiza</title>
 </head>
 <body>
     <nav>
-        <img src="" alt="">
-
-        <a href="#">home</a>
-        <a href="#">cadastre</a>
-        <a href="#">criar lista</a>
-        <a href="#">simulador</a>
-        <div>
-            <a href="#">criar conta</a>
-            <a href="#">entrar</a>
+        <div id="img-nav">
+            <img src="{% static 'img/logo_economiza_pequena.png' %}" alt="">
         </div>
+
+        <div id="itens-nav">
+            <a href="#">home</a>
+            <a href="#">cadastre</a>
+            <a href="#">criar lista</a>
+            <a href="#">simulador</a>
+            <div>
+                <a href="#">criar conta</a>
+                <a href="#">entrar</a>
+            </div>
+        </div>
+
     </nav>
 
     {% block content %}
