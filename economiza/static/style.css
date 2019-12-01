@@ -95,10 +95,8 @@
     padding: 20px;
 }
 
-nav{
-    background-color: #341773;
-    display: flex;
-    justify-content: space-between;
+#space{
+    height: 75px;
 }
 
 #redes-sociais{
@@ -116,4 +114,13 @@ nav{
 
 #redes-sociais img:hover{
     filter: grayscale(0%);
+}
+
+nav{
+    background-color: #341773;
+    display: flex;
+    justify-content: space-between;
+    position: fixed; 
+    top: 0;
+    width: 100%;
 }
