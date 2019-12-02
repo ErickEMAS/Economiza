@@ -4,3 +4,6 @@ from django.shortcuts import render
 
 def mostrar_home(request):
     return render(request, 'home.html')
+
+def mostrar_cadastre(request):
+    return render(request, 'cadastre.html')

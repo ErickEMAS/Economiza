@@ -20,4 +20,6 @@ from economiza import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.mostrar_home),
+    path('home/', views.mostrar_home),
+    path('cadastre/', views.mostrar_cadastre),
 ]
