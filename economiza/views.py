@@ -7,3 +7,6 @@ def mostrar_home(request):
 
 def mostrar_cadastre(request):
     return render(request, 'cadastre.html')
+
+def mostrar_cadastre_produto(request):
+    return render(request, 'cadastre_produto.html')
