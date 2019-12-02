@@ -213,6 +213,10 @@ nav{
     justify-content: center;
 }
 
+#section1-cadastre a{
+    text-decoration: none;
+}
+
 #produto-cadastre{
     align-items: center;
     border-radius: 10px;
@@ -224,7 +228,7 @@ nav{
     justify-content: center;
     margin: 2vh 0 4vh 0;
     text-shadow: rgba(0, 0, 0, .5) 2px 2px;
-    width: 80%;
+    width: 80vw;
 }
 
 #produto-cadastre:hover{
@@ -243,10 +247,38 @@ nav{
     justify-content: center;
     margin: 4vh 0 2vh 0;
     text-shadow: rgba(0, 0, 0, .5) 2px 2px;
-    width: 80%;
+    width: 80vw;
 }
 
 #comercio-cadastre:hover{
     color: #341773;
     border: solid #341773;
+}
+
+
+/* cadastre-produto */
+
+#section1-cadastre-produto{
+    background-color: #f1b807;
+    display: flex;
+    justify-content: center;
+}
+
+#content-cadastre-produto{
+    background-color: #ffffff;
+    border-radius: 10px 10px 0 0;
+    border: solid #ffffff;
+    box-shadow: rgba(0, 0, 0, .5) 2px 2px;
+    height: 100vh;
+    width: 80vw;
+    margin: 5vh 0 0 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+#content-cadastre-produto h3{
+    color: #341773;
+    font-size: 10vh;
 }
