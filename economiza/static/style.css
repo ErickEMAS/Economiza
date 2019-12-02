@@ -10,8 +10,8 @@
     color: white;
     font-family: 'Bebas Neue', cursive;
     font-size: larger;
-    text-decoration: none;
     padding: 0 5px;
+    text-decoration: none;
 }
 
 .a-cce:hover{
@@ -22,8 +22,8 @@
     color: white;
     font-family: 'Bebas Neue', cursive;
     font-size: larger;
-    text-decoration: none;
     padding: 0 15px;
+    text-decoration: none;
 }
 
 .a-nav:hover{
@@ -37,10 +37,10 @@
 
 #app-mobile h4{
     color: #da7b29;
-    font-size: 340%;
     font-family: 'Bebas Neue', cursive;
-    text-transform: uppercase;
+    font-size: 340%;
     margin: 0 0 50px 0;
+    text-transform: uppercase;
 }
 
 #app-mobile img{
