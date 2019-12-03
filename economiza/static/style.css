@@ -265,17 +265,17 @@ nav{
 }
 
 #content-cadastre-produto{
+    align-items: center;
     background-color: #ffffff;
     border-radius: 10px 10px 0 0;
     border: solid #ffffff;
     box-shadow: rgba(0, 0, 0, .5) 2px 2px;
-    height: 100vh;
-    width: 80vw;
-    margin: 5vh 0 0 0;
     display: flex;
-    align-items: center;
     flex-direction: column;
+    height: 100vh;
     justify-content: flex-start;
+    margin: 5vh 0 0 0;
+    width: 80vw;
 }
 
 #content-cadastre-produto h3{
@@ -292,20 +292,59 @@ nav{
 }
 
 #content-cadastre-comercio{
+    align-items: center;
     background-color: #ffffff;
     border-radius: 10px 10px 0 0;
     border: solid #ffffff;
     box-shadow: rgba(0, 0, 0, .5) 2px 2px;
-    height: 100vh;
-    width: 80vw;
-    margin: 5vh 0 0 0;
     display: flex;
-    align-items: center;
     flex-direction: column;
+    height: 100vh;
     justify-content: flex-start;
+    margin: 5vh 0 0 0;
+    width: 80vw;
 }
 
 #content-cadastre-comercio h3{
     color: #341773;
     font-size: 10vh;
+}
+
+/* minha lista */
+
+#section1-minha-lista{
+    background-color: #f29627;
+    display: flex;
+    justify-content: center;
+}
+
+#content-minha-lista{
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px 10px 0 0;
+    border: solid #ffffff;
+    box-shadow: rgba(0, 0, 0, .5) 2px 2px;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: flex-start;
+    margin: 5vh 0 0 0;
+    width: 80vw;
+}
+
+#content-minha-lista{
+    color: #341773;
+    font-size: 10vh;
+}
+
+#novo_item{
+    display: flex;
+    font-size: 50px;
+    color: #000000;
+    margin: 25px 0 0 0;
+}
+
+#novo_item img{
+    height: 50px;
+    margin: 0 25px 0 0;
 }
