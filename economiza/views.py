@@ -16,3 +16,6 @@ def mostrar_cadastre_comercio(request):
 
 def mostrar_minha_lista(request):
     return render(request, 'minha_lista.html')
+
+def mostrar_novo_item_lista(request):
+    return render(request, 'novo_item_lista.html')
