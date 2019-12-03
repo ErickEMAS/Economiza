@@ -26,4 +26,5 @@ urlpatterns = [
     path('cadastre/comercio/', views.mostrar_cadastre_comercio),
     path('minha-lista/', views.mostrar_minha_lista),
     path('minha-lista/novo-item/', views.mostrar_novo_item_lista),
+    path('simulador/', views.mostrar_simulador),
 ]

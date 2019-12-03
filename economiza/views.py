@@ -19,3 +19,6 @@ def mostrar_minha_lista(request):
 
 def mostrar_novo_item_lista(request):
     return render(request, 'novo_item_lista.html')
+
+def mostrar_simulador(request):
+    return render(request, 'simulador.html')
