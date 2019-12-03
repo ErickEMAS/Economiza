@@ -13,3 +13,6 @@ def mostrar_cadastre_produto(request):
 
 def mostrar_cadastre_comercio(request):
     return render(request, 'cadastre_comercio.html')
+
+def mostrar_minha_lista(request):
+    return render(request, 'minha_lista.html')
