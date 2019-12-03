@@ -22,3 +22,6 @@ def mostrar_novo_item_lista(request):
 
 def mostrar_simulador(request):
     return render(request, 'simulador.html')
+
+def mostrar_login(request):
+    return render(request, 'login.html')
