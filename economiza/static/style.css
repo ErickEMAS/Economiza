@@ -451,3 +451,56 @@ nav{
 #content-login h5{
     font-size: 3.8vw;
 }
+
+/* cadatro usuario */
+
+#section1-cadastro-user{
+    align-items: center;
+    background-color: #f1b807;
+    color: #ffffff;
+    display: flex;
+    font-size: 6vw;
+    justify-content: center;
+    padding: 5vh 0 0 0;
+}
+
+#section2-cadastro-user{
+    background-color: #f1b807;
+    display: flex;
+    justify-content: center;
+}
+
+#content-cadastro-user{
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 10px;
+    border: solid #ffffff;
+    box-shadow: rgba(0, 0, 0, .5) 2px 2px;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 5vh 0 5vw 0;
+    justify-content: flex-start;
+    width: 80vw;
+}
+
+#content-cadastro-user img{
+    width: 65vw;
+    margin: 5vh 0 5vh 0;
+}
+
+#content-cadastro-user button{
+    color: white;
+    font-size: 3vw;
+    background-color: #a6329d;
+    width: 65vw;
+    height: 8vh;
+}
+
+#content-cadastro-user a{
+    color: #a6329d;
+}
+
+#content-cadastro-user h5{
+    font-size: 3.8vw;
+}
