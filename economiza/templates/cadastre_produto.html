@@ -9,11 +9,18 @@
         <div id="content-cadastre-produto">
             
             <h3>Cadastre um Produto</h3>
-
-            <form action="">
+           
+            {% if formulario %}
+            <form method="POST">
+                {% csrf_token %}
+                {{formulario}}
                 <button>Enviar</button>
             </form>
+            {% endif %}
 
+            {% if msg %}
+            <h3>{{msg}}</h3>
+            {% endif %}
         </div>
         
     </section>
