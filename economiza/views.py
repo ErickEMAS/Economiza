@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from economiza.forms import ProdutoForm
+from economiza.forms import ProdutoForm, ComercioForm
 from economiza.models import *
 
 # Create your views here.
@@ -27,7 +27,20 @@ def mostrar_cadastre_produto(request):
     return render(request, 'cadastre_produto.html', context)
 
 def mostrar_cadastre_comercio(request):
-    return render(request, 'cadastre_comercio.html')
+    form = ComercioForm(request.POST or None)
+
+    if form.is_valid():
+        form.save()
+        context = {
+            'msg': 'Comercio cadastrado com sucesso'
+        }
+        return render (request, 'cadastre_comercio.html', context)
+    
+    context = {
+        'formulario': form
+    }
+
+    return render(request, 'cadastre_comercio.html', context)
 
 def mostrar_minha_lista(request):
     return render(request, 'minha_lista.html')
