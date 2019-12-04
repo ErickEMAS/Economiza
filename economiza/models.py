@@ -8,3 +8,12 @@ class Produto(models.Model):
 
     def __str__(self):
         return self.nome
+
+class Comercio(models.Model):
+    nome = models.CharField(max_length=100)
+    rua = models.CharField(max_length=200)
+    bairro = models.CharField(max_length=200)
+    numero = models.PositiveIntegerField(default=0)
+
+    def __str__(self):
+        return self.nome
