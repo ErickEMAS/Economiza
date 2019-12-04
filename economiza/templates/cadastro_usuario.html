@@ -1,0 +1,27 @@
+{% extends 'layout.html' %}
+
+{% load static %}
+
+{% block content %}
+
+    <section id="section1-cadastro-user">
+        <h3>Cadastre-se</h3>
+    </section>
+
+    <section id="section2-cadastro-user">
+      
+
+        <div id="content-cadastro-user">
+
+            <img src="{% static 'img/logo_economiza_grande.png' %}" alt="">
+            <form action="">
+                <button>Enviar</button>
+            </form>
+
+            <h5>Possui cadastro? <a href="/login">acesse sua conta</a></h5>
+
+        </div>
+        
+    </section>
+
+{% endblock %}
