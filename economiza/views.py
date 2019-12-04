@@ -25,3 +25,6 @@ def mostrar_simulador(request):
 
 def mostrar_login(request):
     return render(request, 'login.html')
+
+def mostrar_cadastro_usuario(request):
+    return render(request, 'cadastro_usuario.html')
