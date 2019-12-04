@@ -9,11 +9,18 @@
         <div id="content-cadastre-comercio">
             
             <h3>Cadastre um Comércio</h3>
-
-            <form action="">
+            
+            {% if formulario %}
+            <form method="POST">
+                {% csrf_token %}
+                {{formulario}}
                 <button>Enviar</button>
             </form>
+            {% endif %}
 
+            {% if msg %}
+            <h2>Comercio cadastrado com sucesso</h2>
+            {% endif %}
         </div>
         
     </section>
