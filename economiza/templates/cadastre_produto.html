@@ -8,10 +8,11 @@
 
         <div id="content-cadastre-produto">
             
-            <h3>Cadastre um Produto</h3>
-           
             {% if formulario %}
-            <form method="POST">
+
+            <h3>Cadastre um Produto</h3>
+
+            <form method="POST" id="form-produto">
                 {% csrf_token %}
                 {{formulario}}
                 <button>Enviar</button>
@@ -19,8 +20,10 @@
             {% endif %}
 
             {% if msg %}
+
                 <h3>{{msg}}</h3>
-                <a href="/cadastre/produto"><h2>Cadastra um novo produto</h2></a>
+
+                <a href="/cadastre/produto"><h2 class="pos">Cadastra um novo produto</h2></a>
             {% endif %}
         </div>
         
