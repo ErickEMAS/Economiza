@@ -290,7 +290,7 @@ nav{
     max-height: 100%;
     justify-content: flex-start;
     margin: 5% 0 0 0;
-    width: 80vw;
+    width: 55vw;
 }
 
 #content-cadastre-comercio h3{
@@ -308,7 +308,14 @@ nav{
 }
 
 #form-comercio input{
-    height: 5vh;
+    height: 3vw;
+    margin: 1vh 0;
+    font-size: 2.5vw;
+}
+
+#form-comercio select{
+    height: 3vw;
+    font-size: 2.5vw;
     margin: 1vh 0;
 }
 
@@ -348,7 +355,7 @@ nav{
     max-height: 100%;
     justify-content: flex-start;
     margin: 5vh 0 0 0;
-    width: 80vw;
+    width: 55vw;
 }
 
 #content-cadastre-produto h3{
@@ -366,8 +373,9 @@ nav{
 }
 
 #form-produto input{
-    height: 5vh;
+    height: 3vw;
     margin: 1vh 0;
+    font-size: 2.5vw;
 }
 
 #form-produto button{
@@ -380,6 +388,12 @@ nav{
 
 #form-produto button:hover{
     background-color: #a6329d;
+}
+
+#form-produto select{
+    height: 3vw;
+    font-size: 2.5vw;
+    margin: 1vh 0;
 }
 
 #pos-produto-cadastrado{
