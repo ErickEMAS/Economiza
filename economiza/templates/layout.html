@@ -9,7 +9,8 @@
 
     <link rel="shortcut icon" href="{% static 'img/favicon.png' %}" type="image/x-icon">
 
-    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" media="screen and (min-width: 721px)">
+    <link rel="stylesheet" href="{% static 'css/style_mobile.css' %}" media="screen and (max-width: 720px)">
 
     <title>Economiza</title>
 </head>
@@ -29,6 +30,12 @@
                 </div>
             </a>
         </div>
+
+        <button class="open-nav" style="border:none">
+            <span class="line" id="line1"></span>
+            <span class="line" id="line2"></span>
+            <span class="line" id="line3"></span>
+        </button>
 
     </nav>
 
