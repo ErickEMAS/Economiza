@@ -10,6 +10,10 @@ a{
 }
 
 /* layout */
+.open-nav{
+    display: none;
+}
+
 .a-cce{
     color: white;
     font-family: 'Bebas Neue', cursive;
