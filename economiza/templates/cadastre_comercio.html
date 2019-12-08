@@ -12,10 +12,10 @@
 
                 <h3>Cadastre um Comércio</h3>
 
-                <form method="POST">
+                <form method="POST" id="form-comercio">
                     {% csrf_token %}
                     {{formulario}}
-                    <button>ENVIAR</button>
+                    <button>Cadastrar Comércio</button>
                 </form>
 
             {% endif %}
@@ -23,8 +23,10 @@
             {% if msg %}
                 <h3>Comércio cadastrado com Sucesso</h2>
                 
-                <a href="/cadastre/comercio"><h2>Cadastra um novo comércio <br></h2></a>
-                <a href="/cadastre/produto"><h2>Cadastra um produto</h2></a>
+                <div id="pos-comercio-cadastrado">
+                    <a href="/cadastre/comercio"><h2 class="pos">Cadastra novo comércio <br></h2></a>
+                    <a href="/cadastre/produto"><h2 class="pos">Cadastra um produto</h2></a>
+                </div>
                 
 
             {% endif %}
