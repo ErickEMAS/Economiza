@@ -5,9 +5,6 @@ from economiza.models import Produto, Comercio
 from django.contrib.auth.models import User
 
 class UserModelForm(forms.ModelForm):
-    User._meta.get_field('first_name').blank = False
-    User._meta.get_field('last_name').blank = False
-    User._meta.get_field('email').blank = False
     class Meta:
         model = User
         fields = [
