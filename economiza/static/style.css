@@ -387,18 +387,6 @@ nav{
     width: 80vw;
 }
 
-/* simulador */
-
-#section1-simulador{
-    align-items: center;
-    background-color: #f29627;
-    color: white;
-    display: flex;
-    justify-content: center;
-    padding: 30px;
-    text-align: justify;
-}
-
 /* login */
 
 #section1-login{
