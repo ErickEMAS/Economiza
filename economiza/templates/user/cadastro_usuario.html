@@ -17,7 +17,7 @@
  
             {% if formulario %}
 
-                <form method="POST" id="form-cadastrp-user">
+                <form method="POST" id="form-cadastro-user">
                     {% csrf_token %}
                     
                     {{ formulario }}
@@ -30,7 +30,7 @@
             {% endif %}
 
             {% if msg %}
-                <h3>Cadastro realizado com sucesso</h2>
+                <h3>Cadastro realizado com sucesso</h3>
                 
                 <a href="/login"><h2 class="pos">Acesse sua conta<br></h2></a>
 
