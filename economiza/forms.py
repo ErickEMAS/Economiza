@@ -5,6 +5,9 @@ from economiza.models import Produto, Comercio
 from django.contrib.auth.models import User
 
 class UserModelForm(forms.ModelForm):
+    User._meta.get_field('first_name').blank = False
+    User._meta.get_field('last_name').blank = False
+    User._meta.get_field('email').blank = False
     class Meta:
         model = User
         fields = [
@@ -20,6 +23,28 @@ class UserModelForm(forms.ModelForm):
                     'last_name': forms.TextInput(attrs={'class': 'form-control', 'maxlength': 255}),
                     'email': forms.TextInput(attrs={'class': 'form-control', 'maxlength': 255}),
                     'password': forms.PasswordInput(attrs={'class': 'form-control', 'maxlength': 255}),                    
+        }
+
+        error_messages = {
+            'username': {
+                'required': 'Este campo é obrigatório'
+            },
+
+            'first_name': {
+                'required': 'Este campo é obrigatório'
+            },
+
+            'last_name': {
+                'required': 'Este campo é obrigatório'
+            },
+
+            'email': {
+                'required': 'Este campo é obrigatório'
+            },
+
+            'password': {
+                'required': 'Este campo é obrigatório'
+            },
         }
 
 class ProdutoForm(forms.ModelForm):
