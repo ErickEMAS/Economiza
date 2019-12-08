@@ -14,8 +14,17 @@
         <div id="content-login">
 
             <img src="{% static 'img/logo_economiza_grande.png' %}" alt="">
-            <form action="">
-                <button>ENVIAR</button>
+            
+            <form action="." method="POST">
+                {% csrf_token %}
+
+                <label for="username">Usuário</label>
+                <input type="text" id="username" name="username" placeholder="username">
+
+                <label for="password">Usuário</label>
+                <input type="password" id="password" name="password" placeholder="password">
+
+                <button>acessar</button>
             </form>
 
             <h5>Não possui Cadastro? <a href="/cadastro-usuario">Crie uma conta</a></h5>
