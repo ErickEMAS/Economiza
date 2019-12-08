@@ -1,7 +1,13 @@
 from economiza.models import Comercio, Produto
-from django.shortcuts import render
+from django.shortcuts import render, redirect
+from django.http import HttpResponse
 from economiza.forms import UserModelForm
 from economiza.forms import ProdutoForm, ComercioForm
+from django.contrib import messages
+from django.contrib.auth.models import User
+from django.contrib.auth import authenticate, login, logout 
+from django.contrib.auth.decorators import login_required
+
 
 
 # Create your views here.
@@ -23,7 +29,20 @@ def mostrar_cadastro_usuario(request):
 
     return render(request, 'user/cadastro_usuario.html', context)
 
-    
+def mostrar_login(request):
+    if request.POST:
+        username = request.POST.get('username')
+        password = request.POST.get('password')
+        user = authenticate(username=username, password=password)
+        if user is not None:
+            login(request, user)
+            return redirect('/home/')
+    return render (request, 'user/login.html')
+
+
+def submit_logout(request):
+    logout(request)
+    return redirect('/login')
 
 def mostrar_home(request):
     return render(request, 'home.html')
@@ -63,14 +82,9 @@ def mostrar_cadastre_comercio(request):
 
     return render(request, 'cadastre_comercio.html', context)
 
+@login_required(redirect_field_name='/login/')
 def mostrar_minha_lista(request):
     return render(request, 'minha_lista.html')
 
 def mostrar_novo_item_lista(request):
     return render(request, 'novo_item_lista.html')
-
-def mostrar_simulador(request):
-    return render(request, 'simulador.html')
-
-def mostrar_login(request):
-    return render(request, 'user/login.html')
