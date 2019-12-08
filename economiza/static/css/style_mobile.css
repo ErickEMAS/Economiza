@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap');
+
+
+*{
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    width: 100%;
+}
+
+/* layout */
+
+nav{
+    background-color: #341773;
+    display: flex;
+    justify-content: space-between;
+    position: fixed; 
+    top: 0;
+    width: 100%;
+    padding: 5px;
+}
+
+#img-nav{
+    align-items: center;
+    display: flex;
+    margin: 0 0 0 10px;
+}
+
+#itens-nav{
+    display: none;
+}
+
+#active{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 80%;
+    height: 100%;
+    opacity: .95;
+    outline: none;
+    z-index: 20;
+    background-color: #341773;
+    display: flex;
+    flex-direction: column;
+    padding-top: 60px;
+    align-items: center;
+    font-size: 8vw;
+    text-align: start;
+}
+
+.a-nav{
+    color: white;
+    margin: 2px;
+}
+
+.a-cce{
+    color: #da7b29;
+}
+
+#space{
+    height: 75px;
+}
+
+
+/* . */
+.open-nav{
+    position: fixed;
+    right: 10px;
+    top: 12px;
+    display: block;
+    width: 40px;
+    height: 30px;
+    background: none;
+    z-index: 101;
+    outline: 0;
+}
+
+.open-nav .line{
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background: #ffffff;
+    right: 0;
+    border-radius: 5px;
+    outline: 0;
+}
+
+#line1{
+    transition: .5s linear;
+    top: 0;
+}
+
+#line2{
+    transition: .8s linear;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    opacity: 1;
+}
+
+#line3{
+    transition: .5s linear;
+    bottom: 0;
+}
+
+.close #line1{
+    transition: .5s linear;
+    transform: rotate(-39deg) translate(-10px,8px);;   
+}
+
+.close #line2{
+    transition: .8s ;
+    right: 100%;
+    opacity: 0;
+}
+
+.close #line3{
+    transition: .5s linear;
+    transform: rotate(39deg) translate(-10px,-9px);
+}
+
+footer{
+    width: 100%;
+}
+
+#app-mobile h4{
+    color: #da7b29;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 240%;
+    margin: 15px 0 10px 0;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+#app-mobile img{
+    filter: grayscale(100%) brightness(2);
+    height: 50px;
+    margin: 0 0 15px 0;
+}
+
+#app-mobile img:hover{
+    filter: grayscale(0%);
+}
+
+#footer-main{
+    align-items: center;
+    background-color: #341773;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-around;    
+    padding: 20px;
+}
+
+#redes-sociais{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 50px 0 0 0;
+}
+
+#redes-sociais img{
+    filter: grayscale(100%) brightness(2);
+    height: 50px;
+    margin: 0 25px;
+}
+
+#redes-sociais img:hover{
+    filter: grayscale(0%);
+}
+
+#footer-down{
+    align-items: center;
+    background-color: #000000;
+    color: white;
+    display: flex;
+    font-size: x-large;
+    height: 35px;
+    justify-content: center;
+}
