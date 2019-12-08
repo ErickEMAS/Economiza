@@ -1,8 +1,29 @@
+from economiza.models import Comercio, Produto
 from django.shortcuts import render
+from economiza.forms import UserModelForm
 from economiza.forms import ProdutoForm, ComercioForm
-from economiza.models import *
+
 
 # Create your views here.
+
+def mostrar_cadastro_usuario(request):
+    form = UserModelForm(request.POST or None)
+    context = {'form':form}
+    if request.method == 'POST':
+        if form.is_valid():
+            form.save()
+            context  = {
+                'msg': 'Produto cadastrado com sucesso'
+            }
+            return render(request, 'user/cadastro_usuario.html', context)
+    
+    context = {
+        'formulario': form
+    }
+
+    return render(request, 'user/cadastro_usuario.html', context)
+
+    
 
 def mostrar_home(request):
     return render(request, 'home.html')
@@ -52,7 +73,4 @@ def mostrar_simulador(request):
     return render(request, 'simulador.html')
 
 def mostrar_login(request):
-    return render(request, 'login.html')
-
-def mostrar_cadastro_usuario(request):
-    return render(request, 'cadastro_usuario.html')
+    return render(request, 'user/login.html')
