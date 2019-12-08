@@ -8,18 +8,25 @@
 
         <div id="content-cadastre-comercio">
             
-            <h3>Cadastre um Comércio</h3>
-            
             {% if formulario %}
-            <form method="POST">
-                {% csrf_token %}
-                {{formulario}}
-                <button>ENVIAR</button>
-            </form>
+
+                <h3>Cadastre um Comércio</h3>
+
+                <form method="POST">
+                    {% csrf_token %}
+                    {{formulario}}
+                    <button>ENVIAR</button>
+                </form>
+
             {% endif %}
 
             {% if msg %}
-            <h2>Comércio cadastrado com Sucesso</h2>
+                <h3>Comércio cadastrado com Sucesso</h2>
+                
+                <a href="/cadastre/comercio"><h2>Cadastra um novo comércio <br></h2></a>
+                <a href="/cadastre/produto"><h2>Cadastra um produto</h2></a>
+                
+
             {% endif %}
         </div>
         
