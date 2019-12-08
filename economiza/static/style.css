@@ -425,10 +425,10 @@ nav{
     box-shadow: rgba(0, 0, 0, .5) 2px 2px;
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    height: 80vw;
     margin: 5vh 0 5vw 0;
     justify-content: flex-start;
-    width: 80vw;
+    width: 55vw;
 }
 
 #content-login img{
