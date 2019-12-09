@@ -31,11 +31,11 @@ nav{
     margin: 0 0 0 1px;
 }
 
-#itens-nav{
+.menu{
     display: none;
 }
 
-#active{
+.active{
     position: fixed;
     top: 0;
     right: 0;
