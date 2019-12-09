@@ -55,11 +55,16 @@ nav{
 
 .a-nav{
     color: white;
-    margin: 2px;
+    margin: 2.5vw;
+    text-transform: uppercase;
+    font-size: 4vw;
 }
 
 .a-cce{
     color: #da7b29;
+    font-size: 4vw;
+    text-transform: uppercase;
+    margin: 2.5vw;
 }
 
 #space{
