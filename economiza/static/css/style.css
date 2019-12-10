@@ -439,6 +439,10 @@ nav{
     font-size: 4vw;
 }
 
+#content-minha-lista h5{
+    color: #a6329d;
+}
+
 #novo-item{
     align-items: center;
     color: #000000;
@@ -451,6 +455,7 @@ nav{
 #novo-item:hover{
     color: #a6329d;
 }
+
 
 #novo-item:hover img{
     filter: grayscale(100%) brightness(.1);
