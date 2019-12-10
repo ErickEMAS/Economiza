@@ -437,7 +437,7 @@ nav{
 #novo-item{
     align-items: center;
     color: #000000;
-    display: flex;
+    display: none;
     font-size: 3vw;
     justify-content: center;
     margin: 25px 0 0 0;
