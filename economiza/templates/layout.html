@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="{% static 'css/style.css' %}" media="screen and (min-width: 721px)">
     <link rel="stylesheet" href="{% static 'css/style_mobile.css' %}" media="screen and (max-width: 720px)">
 
+    <script src="{% static 'js/scripts.js' %}"></script>
+
     <title>Economiza</title>
 </head>
 <body>
@@ -20,7 +22,7 @@
             <img src="{% static 'img/logo_economiza_pequena.png' %}" alt="">
         </div>
 
-        <div id="itens-nav">
+        <div id="itens-nav" class="menu">
             <a href="/home" class="a-nav">home</a>
             <a href="/cadastre" class="a-nav">cadastre</a>
             <a href="/minha-lista" class="a-nav">minha lista</a>
@@ -31,7 +33,7 @@
             </a>
         </div>
 
-        <button class="open-nav" style="border:none">
+        <button class="open-nav" style="border:none" onclick="abrirMenu()">
             <span class="line" id="line1"></span>
             <span class="line" id="line2"></span>
             <span class="line" id="line3"></span>

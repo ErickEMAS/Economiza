@@ -3,6 +3,8 @@
 
 *{
     margin: 0;
+    font-family: 'Bebas Neue', cursive;
+    font-weight: normal;
 }
 
 a{
@@ -31,11 +33,11 @@ nav{
     margin: 0 0 0 1px;
 }
 
-#itens-nav{
+.menu{
     display: none;
 }
 
-#active{
+.active{
     position: fixed;
     top: 0;
     right: 0;
@@ -55,11 +57,18 @@ nav{
 
 .a-nav{
     color: white;
-    margin: 2px;
+    margin: 2.5vw;
+    text-transform: uppercase;
+    font-size: 4vw;
+    font-family: 'Bebas Neue', cursive;
 }
 
 .a-cce{
     color: #da7b29;
+    font-size: 4vw;
+    text-transform: uppercase;
+    margin: 2.5vw;
+    font-family: 'Bebas Neue', cursive;
 }
 
 #space{
@@ -208,7 +217,7 @@ footer{
 }
 
 #section1-home h1{
-    font-size: 200%;
+    font-size: 500%;
     margin: 0 0 20% 0;
 }
 
