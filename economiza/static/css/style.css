@@ -168,8 +168,14 @@ nav{
 }
 
 #section1-home h1{
-    font-size: 200%;
+    font-size: 300%;
     margin: 0 0 20% 0;
+}
+
+#section-home h2{
+    font-size: 200%;
+    text-align: center;
+    margin: 0 auto;
 }
 
 #section2-home{
