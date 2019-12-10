@@ -174,8 +174,7 @@ nav{
 
 #section-home h2{
     font-size: 200%;
-    text-align: center;
-    margin: 0 auto;
+    font-display: center;
 }
 
 #section2-home{

@@ -221,6 +221,11 @@ footer{
     margin: 0 0 20% 0;
 }
 
+#section-home h2{
+    font-size: 200%;
+    font-display: center;
+}
+
 #section2-home{
     align-items: center;
     background-color: white;
