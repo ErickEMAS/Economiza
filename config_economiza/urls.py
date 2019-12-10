@@ -28,5 +28,5 @@ urlpatterns = [
     path('minha-lista/novo-item/', views.mostrar_novo_item_lista),
     path('login/', views.mostrar_login),
     path('logout/submit', views.submit_logout),
-    path('cadastro-usuario/', views.mostrar_cadastro_usuario, name='cadastro'),
+    path('cadastro-usuario/', views.cadastre_usuario),
 ]

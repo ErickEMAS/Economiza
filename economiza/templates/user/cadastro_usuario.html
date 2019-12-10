@@ -1,32 +1,22 @@
 {% extends 'layout.html' %}
-
 {% load static %}
 
 {% block content %}
-
     <section id="section1-cadastro-user">
         <h3>Cadastre-se</h3>
     </section>
-
+    
     <section id="section2-cadastro-user">
-      
-
-        <div id="content-cadastro-user">
-
+      <div id="content-cadastro-user">
             <img src="{% static 'img/logo_economiza_grande.png' %}" alt="">
  
             {% if formulario %}
-
                 <form method="POST" id="form-cadastro-user">
-                    {% csrf_token %}
-                    
+                    {% csrf_token %}                    
                     {{ formulario }}
-                    {{ formulario.errors }}
-                    <button>Criar conta</button>
+                    <button type="submit">Criar conta</button>
                 </form>
-
                 <h5>Possui Cadastro? <a href="/login">Acesse sua Conta</a></h5>
-
             {% endif %}
 
             {% if msg %}

@@ -1,33 +1,31 @@
-from economiza.models import Comercio, Produto
+from economiza.models import Comercio, Produto, Usuario
 from django.shortcuts import render, redirect
 from django.http import HttpResponse
-from economiza.forms import UserModelForm
-from economiza.forms import ProdutoForm, ComercioForm
+from economiza.forms import ProdutoForm, ComercioForm, UsuarioForm
 from django.contrib import messages
 from django.contrib.auth.models import User
 from django.contrib.auth import authenticate, login, logout 
 from django.contrib.auth.decorators import login_required
 
 
-
 # Create your views here.
 
-def mostrar_cadastro_usuario(request):
-    form = UserModelForm(request.POST or None)
-    context = {'form':form}
-    if request.method == 'POST':
-        if form.is_valid():
-            form.save()
-            context  = {
-                'msg': 'Produto cadastrado com sucesso'
-            }
-            return render(request, 'user/cadastro_usuario.html', context)
+def cadastre_usuario(request):
+    form = UsuarioForm(request.POST or None)
+
+    if form.is_valid():
+        form.save()
+        context = {
+            'msg': 'Usuario cadastrado com sucesso'
+        }
+        return render(request, 'user/cadastro_usuario.html', context)
     
     context = {
         'formulario': form
     }
 
     return render(request, 'user/cadastro_usuario.html', context)
+
 
 def mostrar_login(request):
     if request.POST:
@@ -58,7 +56,7 @@ def mostrar_cadastre_produto(request):
         context  = {
             'msg': 'Produto cadastrado com sucesso'
         }
-        return render (request, 'cadastre_produto.html', context)
+        return render(request, 'cadastre_produto.html', context)
     
     context = {
         'formulario': form
@@ -74,7 +72,7 @@ def mostrar_cadastre_comercio(request):
         context = {
             'msg': 'Comercio cadastrado com sucesso'
         }
-        return render (request, 'cadastre_comercio.html', context)
+        return render(request, 'cadastre_comercio.html', context)
     
     context = {
         'formulario': form
@@ -88,3 +86,4 @@ def mostrar_minha_lista(request):
 
 def mostrar_novo_item_lista(request):
     return render(request, 'novo_item_lista.html')
+
