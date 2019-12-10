@@ -26,7 +26,6 @@ def cadastre_usuario(request):
 
     return render(request, 'user/cadastro_usuario.html', context)
 
-
 def mostrar_login(request):
     if request.POST:
         username = request.POST.get('username')
@@ -36,7 +35,6 @@ def mostrar_login(request):
             login(request, user)
             return redirect('/home/')
     return render (request, 'user/login.html')
-
 
 def submit_logout(request):
     logout(request)
@@ -80,7 +78,6 @@ def mostrar_cadastre_comercio(request):
 
     return render(request, 'cadastre_comercio.html', context)
 
-@login_required(redirect_field_name='/login/')
 def mostrar_minha_lista(request):
     return render(request, 'minha_lista.html')
 
