@@ -3,6 +3,8 @@
 
 *{
     margin: 0;
+    font-family: 'Bebas Neue', cursive;
+    font-weight: normal;
 }
 
 a{
@@ -215,7 +217,7 @@ footer{
 }
 
 #section1-home h1{
-    font-size: 200%;
+    font-size: 500%;
     margin: 0 0 20% 0;
 }
 
