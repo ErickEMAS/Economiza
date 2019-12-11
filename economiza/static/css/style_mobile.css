@@ -12,7 +12,11 @@ a{
 }
 
 body{
-    width: 100%;
+    display: grid;
+    grid-template-areas: "nav"
+                         "contentbox"
+                         "footer";
+    grid-template-areas: 100%;
 }
 
 /* layout */
@@ -20,6 +24,7 @@ body{
 nav{
     background-color: #341773;
     display: flex;
+    grid-area: 'nav';
     justify-content: space-between;
     padding: 5px;
     position: fixed; 
@@ -134,6 +139,7 @@ nav{
 }
 
 footer{
+    grid-area: 'footer';
     width: 100%;
 }
 
@@ -163,6 +169,10 @@ footer{
     flex-direction: column-reverse;
     justify-content: space-around;    
     padding: 20px;
+}
+
+#media{
+    width: 80%;
 }
 
 #redes-sociais{
@@ -217,8 +227,7 @@ footer{
 }
 
 #section1-home h1{
-    font-size: 500%;
-    margin: 0 0 20% 0;
+    font-size: 250%;
 }
 
 #section-home h2{
