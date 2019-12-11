@@ -18,6 +18,10 @@ body{
     grid-template-areas: 80%;
 }
 
+.white{
+    color: white;
+}
+
 /* layout */
 
 nav{
