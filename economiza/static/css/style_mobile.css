@@ -14,9 +14,8 @@ a{
 body{
     display: grid;
     grid-template-areas: "nav"
-                         "contentbox"
                          "footer";
-    grid-template-areas: 100%;
+    grid-template-areas: 80%;
 }
 
 /* layout */
